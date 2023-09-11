@@ -1,0 +1,125 @@
+@media screen and (max-width: 900px) {
+  button {
+    font-size: 20px;
+    margin: 15px 0px;
+  }
+  .nav-item a {
+    margin: 0px 8px;
+    padding: 0px 10px;
+  }
+  .left {
+    width: 60%;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+  .left h1 {
+    font-weight: 900;
+    font-size: 26px;
+    width: 90%;
+  }
+  .left p {
+    font-size: 16px;
+    width: 67%;
+    margin: 18px 0px;
+  }
+  .right img {
+    height: 400px;
+  }
+  .main::before {
+    bottom: -140px;
+  }
+  .section2 {
+    padding-top: 140px;
+  }
+  .section2 h1 {
+    font-size: 27px;
+    margin-bottom: 35px;
+  }
+  .section2-container-box {
+    padding: 30px 12px;
+    margin: 15px;
+    width: 30%;
+  }
+  .section2-container-box p {
+    font-size: 15px;
+  }
+  .section3-heading {
+    margin-top: 100px;
+  }
+  .section3-container-box {
+    width: 30%;
+  }
+  .section4 {
+    padding: 35px 50px;
+  }
+  .section4-heading {
+    font-size: 30px;
+    margin: 35px;
+  }
+  .section4-left-box {
+    margin: 20px 0px;
+  }
+  .section4-heading-box {
+    margin: 15px 0px;
+  }
+  .section4-box h3 {
+    font-size: 21px;
+  }
+  .section4-heading-box img {
+    height: 40px;
+    width: 40px;
+  }
+  .section4-box p {
+    font-size: 16px;
+  }
+  .section5 {
+    height: 100%;
+  }
+  .section5-heading {
+    font-size: 31px;
+    margin: 50px;
+  }
+  .section5-container {
+    width: 90%;
+  }
+  .section5-carousel {
+    width: 90%;
+    bottom: -60px;
+  }
+  .section5-box {
+    margin-bottom: 10px;
+  }
+  .section5-box img {
+    height: 35px;
+    width: 35px;
+  }
+  .section5-box-heading img {
+    margin-right: 5px;
+  }
+  .section5-box-heading h4 {
+    font-size: 14;
+  }
+  .section5-box-heading span {
+    font-size: 11px;
+  }
+  .star img {
+    height: 8px;
+    width: 8px;
+  }
+  .section5-box-container p {
+    font-size: 14px;
+  }
+  .section6 h1 {
+    font-size: 27px;
+  }
+  .section6-container {
+    margin-top: 11vh;
+  }
+  .section6-box img {
+    height: 80px;
+  }
+  .footer {
+    height: 30vh;
+  }
+}
+/*# sourceMappingURL=tablet.css.map */

@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap");
+
+$bcolor: #000000;
+$wcolor: #ffffff;
+$button: #1492e6;
+$bggrey: #f8fafc;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: $bcolor;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: $wcolor;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: $button;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 35px;
+  font-weight: 600;
+  font-size: 23px;
+  color: $wcolor;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+#navbar {
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #707070;
+  padding: 10px;
+}
+
+.logo {
+  margin: 20px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  margin: 0px 15px;
+  padding: 0px 10px;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+a:active {
+  color: #575353;
+  transition: 0.5s;
+}
+
+.hamburger-nav {
+  display: flex;
+}
+
+.ham-burger {
+  display: none;
+  margin-right: 8vw;
+  cursor: pointer;
+}
+
+.ham-burger div {
+  width: 25px;
+  height: 3px;
+  background-color: $bcolor;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+/* Main container styling */
+.main {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.left {
+  width: 60%;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+.left h1 {
+  font-weight: 900;
+  font-size: 40px;
+  width: 75%;
+}
+
+.left p {
+  font-size: 18px;
+  width: 65%;
+  margin: 20px 0px;
+}
+
+.left button {
+  z-index: 1;
+}
+
+.right {
+  position: absolute;
+  z-index: -2;
+  right: 0px;
+}
+
+.main::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 120%;
+  height: 200px;
+  background-color: $bggrey;
+  left: -130px;
+  bottom: -160px;
+  z-index: -1;
+}
+
+// Section2 styling
+.section2 {
+  position: relative;
+  background: $bggrey;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section2 h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.section2-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2-container-box {
+  background-color: $wcolor;
+  padding: 40px 20px;
+  margin: 20px;
+  width: 22%;
+  border-radius: 20px;
+}
+
+.section2-container-box h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section2-container-box p {
+  font-size: 18px;
+}
+
+// Section3 styling
+.section3-heading {
+  margin-top: 150px;
+  margin-bottom: 110px !important;
+}
+
+.section3 {
+  position: relative;
+  z-index: 1;
+}
+
+.section3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 120%;
+  height: 300px;
+  background-color: $wcolor;
+  left: -130px;
+  top: -85px;
+  z-index: -1;
+}
+
+.section3-image img {
+  height: 205px;
+  width: 205px;
+  margin-bottom: 20px;
+}
+
+.section3-image {
+  margin-bottom: 20px;
+}
+
+.section3-container-box {
+  width: 27%;
+}
+
+.section3-container-box h3 {
+  text-align: left;
+}
+
+// Section4 styling
+.section4 {
+  display: flex;
+  padding: 50px 100px;
+  flex-direction: column;
+}
+
+.section4-heading {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 40px;
+  text-align: center;
+}
+
+.section4-left-box {
+  width: 50%;
+  margin: 30px 0px;
+}
+
+.section4-right {
+  display: flex;
+}
+
+.section4-right-box {
+  width: 50%;
+}
+
+.section4-heading-box {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.section4-heading-box img {
+  height: 50px;
+  width: 50px;
+}
+
+.section4-box h3 {
+  font-size: 24px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.section4-box p {
+  width: 100%;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+// Section5 styling
+.section5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.section5-heading {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 60px;
+  text-align: center;
+}
+
+.section5-container {
+  background-color: $bggrey;
+  border-radius: 20px;
+  width: 80%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
+  height: 320px;
+}
+
+.section5-bg-head {
+  display: flex;
+  align-items: center;
+}
+
+.section5-bg img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.section5-carousel {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  width: 80%;
+  position: absolute;
+  bottom: -35px;
+}
+
+.section5-box-heading {
+  display: flex;
+  align-items: center;
+}
+
+.section5-box-heading img {
+  margin-right: 10px;
+}
+
+.section5-box-heading span {
+  font-size: 13px;
+}
+
+.section5-box-container {
+  padding: 10px;
+  width: 30%;
+  border-radius: 10px;
+  background-color: $wcolor;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.section5-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section5-box img {
+  height: 40px;
+  width: 40px;
+}
+
+.star img {
+  height: 10px;
+  width: 10px;
+}
+
+// Section6 Styling
+.section6 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15vh;
+}
+
+.section6 h1 {
+  margin-top: 10vh;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.section6-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 17vh;
+  width: 90%;
+}
+
+.section6-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section6-box img {
+  height: 100px;
+}
+
+.section6-box1 img {
+  width: 200px;
+}
+
+// Footer Section
+.footer {
+  background-color: $bcolor;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer h4{
+  color: $wcolor;
+  margin-bottom: 5vh;
+}
